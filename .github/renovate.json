@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommitTypeAll(chore)"
+  ],
+  "ignorePresets": [
+    ":semanticPrefixFixDepsChoreOthers"
+  ],
+  "prConcurrentLimit": 3,
+  "rebaseStalePrs": true,
+  "dependencyDashboard": true,
+  "semanticCommits": true,
+  "postUpdateOptions": [
+    "gomodTidy"
+  ]
+}
